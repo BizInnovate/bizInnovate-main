@@ -131,19 +131,19 @@ footer p {
     margin-bottom: 2rem; /* Space between the main heading and cards */
 }
 
-.card {
+/* .card {
     border: 1px solid #ddd;
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     height: 100%;
-}
+} */
 
-.card-img-top {
-    height: 200px; /* Fixed height for image */
-    object-fit: cover; /* Ensure image covers the area */
-}
+/* .card-img-top {
+    height: 200px; /* Fixed height for image *
+    object-fit: cover; /* Ensure image covers the area *
+} */
 
 .card-body .read-more {
     color: #007bff;
@@ -165,9 +165,9 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-.card-text {
+.card-text.short-text {
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-line-clamp: 3; /* Adjust as needed */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -210,3 +210,7 @@ footer p {
 .card-body p.card-text {
     margin-bottom: 1rem; /* Adjust as needed for space below the paragraph *
 } */
+/*CONTACT US*/
+#contact h2 {
+    margin-bottom: 2rem; /* Adjust this value to set the desired space */
+}

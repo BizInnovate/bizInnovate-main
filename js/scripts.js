@@ -39,26 +39,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //Read More 
-
 document.addEventListener('DOMContentLoaded', function () {
   const readMoreLinks = document.querySelectorAll('.read-more');
 
-  readMoreLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = link.getAttribute('data-target');
-          const shortText = document.getElementById(`text-${targetId}`);
-          const fullText = document.getElementById(`full-text-${targetId}`);
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = link.getAttribute('data-target');
+            const shortText = document.getElementById(`text-${targetId}`);
+            const fullText = document.getElementById(`full-text-${targetId}`);
 
-          if (fullText.style.display === 'none') {
-              fullText.style.display = 'block';
-              shortText.style.display = 'none';
-              link.textContent = 'Read Less';
-          } else {
-              fullText.style.display = 'none';
-              shortText.style.display = 'block';
-              link.textContent = 'Read More';
-          }
-      });
-  });
+            if (fullText.style.display === 'none' || fullText.style.display === '') {
+                fullText.style.display = 'block';
+                shortText.style.display = 'none';
+                link.textContent = 'Read Less';
+            } else {
+                fullText.style.display = 'none';
+                shortText.style.display = 'block';
+                link.textContent = 'Read More';
+            }
+        });
+    });
 });
