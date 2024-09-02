@@ -22,7 +22,7 @@ header {
 
 
 .footer {
-    background-color: #343a40;
+    background-color: #12572a;
     color: white;
     padding: 20px 0;
 }
@@ -240,4 +240,13 @@ footer p {
 /* Ensure proper spacing between icons */
 .social-media .fa {
     margin-right: 1rem;
+}
+/* Custom button color */
+.btn-primary-custom {
+    background-color: #12572a; /* Example color: Bootstrap's default blue */
+}
+
+.btn-primary-custom:hover {
+    background-color: #0f552afa; /* Darker shade for hover effect */
+    border-color: #12572a; /* Darker border color on hover */
 }
