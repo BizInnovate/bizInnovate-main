@@ -176,7 +176,6 @@ footer p {
     height: auto; /* Maintain aspect ratio */
 }
 /*TEAM*/
-
 #team {
     background: #f9f9f9; /* Light grey background color */
 }
@@ -208,33 +207,28 @@ footer p {
 
 .card-text.short-text {
     display: -webkit-box;
-   /* -webkit-line-clamp: 3; /* Adjust as needed */
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
     overflow: hidden;
     text-overflow: ellipsis;
+    line-clamp: 3; 
 }
+
+.card-text.full-text {
+    display: none; 
+    margin-top: 1rem;
+}
+
 .card-text.expanded {
-    display: block; /* Show full text when expanded */
-    /*-webkit-line-clamp: 3; /* Remove line clamp for full text */
+    display: block; 
+    -webkit-line-clamp: unset; 
+    line-clamp: unset;
 }
+
 .text-center {
     text-align: center;
 }
 
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-/* Hidden full text */
-.full-text {
-    display: none; /* Hide full text by default */
-}
-/* Expanded text */
-.card-text.expanded {
-    display: block; /* Show full text when expanded */
-    /*-webkit-line-clamp: unset;  Remove line clamp for full text */
-}
 .mb-4 {
     margin-bottom: 1.5rem; /* Space between cards */
 }
