@@ -108,34 +108,36 @@ footer p {
     margin-bottom: 1.5rem; /* Space between cards */
 }
 /*Events */
-.carousel-item {
-    display: flex;
-    flex-direction: column;
+/* Ensure images cover the carousel width and maintain aspect ratio */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Adjusts the aspect ratio while covering the container */
+    max-height: 60vh; /* Optional: control the height of images */
   }
   
-  .carousel-item img {
-    width: 100%; /* Ensure images cover the full width */
-    height: auto; 
-    object-fit: cover;
-  }
-  
+  /* Style the carousel captions */
   .carousel-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
   }
-  .carousel-indicators li{
+  
+  /* Style carousel indicators */
+  .carousel-indicators li {
     background-color: white;
   }
+  
+  /* Style carousel controls */
   .carousel-control-prev-icon,
-  .carousel-control-next-icon{
-    background-color: rgba(0, 0, 0, 0.5);
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background color for control icons */
   }
   
 /* Projects */
