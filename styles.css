@@ -115,7 +115,8 @@ footer p {
   
   .carousel-item img {
     width: 100%; /* Ensure images cover the full width */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
+    object-fit: cover;
   }
   
   .carousel-caption {
@@ -128,6 +129,13 @@ footer p {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+  }
+  .carousel-indicators li{
+    background-color: white;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
 /* Projects */
