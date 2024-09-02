@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     readMoreLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = link.getAttribute('data-target');
+            const targetId = this.getAttribute('data-target');
             const shortText = document.getElementById(`text-${targetId}`);
             const fullText = document.getElementById(`full-text-${targetId}`);
 
