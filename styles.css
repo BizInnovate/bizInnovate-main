@@ -107,6 +107,29 @@ footer p {
 .mb-4 {
     margin-bottom: 1.5rem; /* Space between cards */
 }
+/*Events */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Ensure images cover the full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
 /* Projects */
 
 #projects {
@@ -166,14 +189,14 @@ footer p {
 
 .card-text.short-text {
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Adjust as needed */
+   /* -webkit-line-clamp: 3; /* Adjust as needed */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .card-text.expanded {
     display: block; /* Show full text when expanded */
-    -webkit-line-clamp: none; /* Remove line clamp for full text */
+    /*-webkit-line-clamp: 3; /* Remove line clamp for full text */
 }
 .text-center {
     text-align: center;
@@ -191,7 +214,7 @@ footer p {
 /* Expanded text */
 .card-text.expanded {
     display: block; /* Show full text when expanded */
-    -webkit-line-clamp: none; /* Remove line clamp for full text */
+    /*-webkit-line-clamp: unset;  Remove line clamp for full text */
 }
 .mb-4 {
     margin-bottom: 1.5rem; /* Space between cards */
