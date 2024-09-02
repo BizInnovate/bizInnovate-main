@@ -159,7 +159,7 @@ footer p {
 } */
 
 .card-body .read-more {
-    color: #007bff;
+    color: #12572a;
     text-decoration: none;
     font-weight: bold;
 }
@@ -229,12 +229,12 @@ footer p {
 }
 /* Style for social media icons */
 .social-media a {
-    color: #333; /* Default color */
+    color: #12572a; /* Default color */
     transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #007bff; /* Color on hover (Bootstrap primary color) */
+    color: #046822d8; /* Color on hover (Bootstrap primary color) */
 }
 
 /* Ensure proper spacing between icons */
