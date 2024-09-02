@@ -227,3 +227,17 @@ footer p {
 #contact h2 {
     margin-bottom: 2rem; /* Adjust this value to set the desired space */
 }
+/* Style for social media icons */
+.social-media a {
+    color: #333; /* Default color */
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Color on hover (Bootstrap primary color) */
+}
+
+/* Ensure proper spacing between icons */
+.social-media .fa {
+    margin-right: 1rem;
+}
