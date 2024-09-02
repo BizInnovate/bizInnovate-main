@@ -129,6 +129,10 @@ footer p {
     color: #666;
     margin-bottom: 1.5rem; /* Space below each paragraph */
 }
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
 /*TEAM*/
 
 #team {
