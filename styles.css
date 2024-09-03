@@ -206,7 +206,7 @@ footer p {
 }
 
 .card-text.short-text {
-    display: -webkit-box;
+    display:  block;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; 
     overflow: hidden;

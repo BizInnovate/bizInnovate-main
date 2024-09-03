@@ -22,25 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form');
   
-  form.addEventListener('submit', function(event) {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      
-      if (name === '' || email === '' || message === '') {
-          event.preventDefault();
-          alert('Please fill out all fields.');
-      } else if (!validateEmail(email)) {
-          event.preventDefault();
-          alert('Please enter a valid email address.');
-      }
-  });
-  
-  function validateEmail(email) {
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email);
-  }
+  if (form) { // Ensure form exists
+    form.addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (name === '' || email === '' || message === '') {
+            event.preventDefault();
+            alert('Please fill out all fields.');
+        } else if (!validateEmail(email)) {
+            event.preventDefault();
+            alert('Please enter a valid email address.');
+        }
+    });
+}
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
 });
+
 
 // Read More/Read Less Functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -49,10 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
   readMoreLinks.forEach(link => {
       link.addEventListener('click', function(event) {
           event.preventDefault();
+          console.log('Read More clicked');
+
           const targetId = this.getAttribute('data-target');
+          console.log('Target ID:', targetId);
+
           const shortText = document.getElementById(`text-${targetId}`);
           const fullText = document.getElementById(`full-text-${targetId}`);
-          
+          console.log('Short Text:', shortText);
+          console.log('Full Text:', fullText);
           // Ensure the elements exist before toggling visibility
           if (shortText && fullText) {
               if (fullText.style.display === 'none' || fullText.style.display === '') {
